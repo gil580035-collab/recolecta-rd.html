@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Admin - RECOLECTA-RD</title>
+
+  <style>
+    body { font-family:Arial,Helvetica,sans-serif; padding:16px; margin:0; background:#f4f6f6; }
+    h1 { color:#228B22; }
+    button {
+      background:#228B22;
+      color:#fff;
+      border:none;
+      padding:8px 10px;
+      border-radius:6px;
+      cursor:pointer;
+      margin:4px;
+    }
+    .reporte-box {
+      background:#fff;
+      padding:14px;
+      border-radius:8px;
+      margin-bottom:14px;
+      box-shadow:0 4px 12px rgba(0,0,0,0.08);
+    }
+    img {
+      max-width:220px;
+      margin-top:8px;
+      border-radius:8px;
+      display:block;
+    }
+  </style>
+</head>
+
+<body>
+
+<h1>Panel Administrador - RECOLECTA-RD</h1>
+
+<div id="adminInfo"></div>
+<button id="btnLogout">Cerrar sesión</button>
+
+<h2>Todos los reportes</h2>
+<div id="adminReportes">Cargando...</div>
+
+<!-- Firebase SDKs -->
+<script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-firestore-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-storage-compat.js"></script>
+
+<!-- Config + Inicialización -->
+<script src="firebase-config.js"></script>
+<script>firebase.initializeApp(firebaseConfig);</script>
+
+<!-- Lógica del panel admin -->
+<script src="admin.js"></script>
+
+</body>
+</html>
