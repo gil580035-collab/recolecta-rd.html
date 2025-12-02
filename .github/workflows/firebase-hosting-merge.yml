@@ -16,4 +16,4 @@ jobs:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
           firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_RECOLECTARD_6997E }}
           channelId: live
-          projectId: recolectard-1b9ba
+          projectId: recolectard-6997e
